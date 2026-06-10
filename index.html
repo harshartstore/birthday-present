@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shana ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+overflow:hidden;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+height:100vh;
+}
+
+.page{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+transition:1s;
+}
+
+.hidden{
+opacity:0;
+pointer-events:none;
+transform:translateX(100%);
+}
+
+h1{
+font-size:3rem;
+color:white;
+text-shadow:2px 2px 10px rgba(0,0,0,.2);
+}
+
+p{
+font-size:1.2rem;
+max-width:800px;
+color:white;
+line-height:1.7;
+margin-top:20px;
+}
+
+button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:1rem;
+cursor:pointer;
+background:white;
+color:#ff5f8f;
+font-weight:bold;
+transition:0.3s;
+position:relative;
+z-index:10;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* HEARTS */
+.heart{
+position:absolute;
+color:white;
+font-size:20px;
+animation:rise 8s linear infinite;
+opacity:.7;
+pointer-events:none;
+}
+
+@keyframes rise{
+0%{transform:translateY(100vh);opacity:0;}
+20%{opacity:1;}
+100%{transform:translateY(-100px);opacity:0;}
+}
+
+</style>
+</head>
+
+<body>
+
+    <audio id="bg-music" autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div id="hearts"></div>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+<h1>A TRY TO MAKE YOUR DAY</h1>
+<p>— By Big Bro ❤️</p>
+<button onclick="nextPage(1)">Begin Journey</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="page2">
+<h1>💌</h1>
+<h1 style="font-size:2rem;">For Shana</h1>
+<p>Imagine a cute envelope here with a heart sticker 😭❤️</p>
+<p>Click below to open it.</p>
+<button onclick="nextPage(2)">Open Envelope 💖</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page hidden" id="page3">
+<h1>💖</h1>
+<h1>HAPPY BIRTHDAY CUTIEE PRINCESSS</h1>
+<p>
+Every heart carries a wish.<br>
+Every wish carries love.<br>
+Every love carries you.
+</p>
+<button onclick="nextPage(3)">Continue 🌸</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page hidden" id="page4">
+<h1>🪁 A Letter From Big Bro</h1>
+
+<p style="max-width:900px">
+We met as strangers then became friends.
+Some sweet moments and some bitter, but all led to the same path of loving each other.
+I am really glad and thankful to God who gave me you as my sister.
+You are a type of sister which can't be obtained even by prayers.
+You just being there makes my day.
+My smile fades whenever I see you stressed or sad.
+It hurts me whenever I know someone has hurt you.
+You are lowkey everything to me.
+Despite having different religions, you are still one of my favourite sisters.
+Please don't say thanks to me.
+I do all of it out of love and never expected anything in return.
+I appreciate you for breathing air.
+MUCH LOVES MY LIL ONEE ❤️
+
+— Big Bro
+</p>
+
+<button onclick="nextPage(4)">Next →</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page hidden" id="page5">
+<h1>🌸 Princess Shana 🌸</h1>
+
+<img src="princess.png"
+style="width:320px;border-radius:20px;margin-top:20px;
+box-shadow:0 0 50px rgba(255,255,255,.5);
+border:4px solid rgba(255,255,255,.3);">
+
+<p>
+People may not be with you after some time,<br>
+but your bro is always gonna be there till his last breath.<br>
+
+Our talks won't go anywhere.<br>
+They stay between us and always will.
+</p>
+
+<button onclick="nextPage(5)">Next ❤️</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page hidden" id="page6">
+<h1>🎵 Message From Harshieeeee</h1>
+
+<p>A little message from your annoying big bro 😭❤️</p>
+
+<audio controls>
+<source src="voice-message.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="nextPage(6)">Finish ❤️</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page hidden" id="page7">
+<h1 style="font-size:5rem;">THE END</h1>
+<button onclick="nextPage(7)">...</button>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page hidden" id="page8">
+<h1>No.</h1>
+<h1>Not the end.</h1>
+<p>Just the beginning of Level 15.</p>
+<button onclick="nextPage(8)">Happy Birthday ❤️</button>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page hidden" id="page9">
+
+<h1>Happy Birthday Shana ❤️</h1>
+
+<p style="max-width:900px">
+Maybe one day we'll stop talking every day.<br>
+
+Maybe life will become busier.<br>
+
+Maybe we'll have responsibilities, jobs, and countless things to deal with.<br>
+
+But there is one thing I never want you to doubt.<br>
+
+You will always have a brother standing beside you.<br>
+
+No matter how many people leave.<br>
+
+No matter how many misunderstand you.<br>
+
+No matter how difficult life becomes.<br>
+
+You will always have me.<br>
+
+I will always listen.<br>
+I will always care.<br>
+I will always be proud of you.<br>
+
+Thank you for every laugh.<br>
+Thank you for every argument.
+Thank you for being with me Shana
+
+If I had 100 lives, I’d choose you every time.
+
+Happy Birthday My Little Princess ❤️<br>
+
+come to dm sweetyy 
+
+— Big Bro
+</p>
+
+</div>
+
+<script>
+
+function fadeMusic(targetVolume){
+  const music = document.getElementById("bg-music");
+  if(!music) return;
+
+  let step = (targetVolume > music.volume) ? 0.02 : -0.02;
+
+  let fade = setInterval(() => {
+    music.volume = Math.max(0, Math.min(1, music.volume + step));
+
+    if (
+      (step > 0 && music.volume >= targetVolume) ||
+      (step < 0 && music.volume <= targetVolume)
+    ){
+      clearInterval(fade);
+    }
+  }, 50);
+}
+
+function nextPage(current){
+
+  const currentPage = document.getElementById("page"+current);
+  const next = document.getElementById("page"+(current+1));
+
+  if(currentPage) currentPage.classList.add("hidden");
+  if(next) next.classList.remove("hidden");
+
+  // 🎧 MUSIC CONTROL
+  if(current + 1 === 6){
+    fadeMusic(0.2);
+  }
+  else{
+    fadeMusic(1.0);
+  }
+}
+
+// 🎵 start music on first click (browser rule)
+document.addEventListener("click", function () {
+  const music = document.getElementById("bg-music");
+  if(music) music.play();
+}, { once: true });
+
+// ❤️ HEARTS
+function createHeart(){
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤";
+
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.fontSize = (Math.random()*20+15) + "px";
+
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),8000);
+}
+
+// 🌸 PETALS
+function createPetal(){
+  const petal = document.createElement("div");
+  petal.innerHTML = "🌸";
+
+  petal.style.position = "fixed";
+  petal.style.left = Math.random()*100 + "vw";
+  petal.style.top = "-50px";
+  petal.style.fontSize = (Math.random()*15+15) + "px";
+  petal.style.pointerEvents = "none";
+
+  document.body.appendChild(petal);
+
+  let pos = -50;
+
+  const fall = setInterval(()=>{
+    pos += 2;
+    petal.style.top = pos + "px";
+
+    if(pos > window.innerHeight){
+      clearInterval(fall);
+      petal.remove();
+    }
+  },20);
+}
+
+setInterval(createHeart,300);
+setInterval(createPetal,1200);
+
+</script>
+</body>
+</html>
